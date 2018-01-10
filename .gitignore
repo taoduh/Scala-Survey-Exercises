@@ -1,0 +1,5 @@
+target/
+project/target/
+.idea/
+src/main/scala/com/illumina/scala/survey/solutions/Variables.scala
+**/.DS_Store
