@@ -4,6 +4,8 @@
 
 val ms = new com.illumina.scala.survey.MethodSyntax
 
+def diameter2(radius: Double): Double = radius * 2
+
 // return value is last statement in method
 ms.diameter(3.5)
 ms.isEven(42)
@@ -19,3 +21,7 @@ ms.console
 // dots not always required to call methods
 1.to(10)
 1 to 10
+
+1 + 4
+1.+(4)
+"weird".*(4)

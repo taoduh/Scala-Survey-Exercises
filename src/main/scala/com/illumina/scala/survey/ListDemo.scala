@@ -1,15 +1,15 @@
 package com.illumina.scala.survey
 
 class ListAdditions {
-  //  def isort(xs: List[Int]): List[Int] = xs match {
-  //    case List() => List()
-  //    case y :: ys => insert(y, isort(ys))
-  //  }
-  //
-  //  def insert(x: Int, xs: List[Int]): List[Int] = xs match {
-  //    case List() => List(x)
-  //    case y :: ys => if (x < y) x :: xs else y :: insert(x, ys)
-  //  }
+  def isort[T](xs: List[T]): List[T] = xs match {
+    case List() => List()
+    case y :: ys => insert(y, isort(ys))
+  }
+
+  def insert[T](x: T, xs: List[T]): List[T] = xs match {
+    case List() => List(x)
+    case y :: ys => if (x < y) x :: xs else y :: insert(x, ys)
+  }
 
   def last[T](xs: List[T]): T = xs match {
     case List() => throw new Error("last of empty list")

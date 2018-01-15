@@ -23,3 +23,4 @@ val bestCitiesInCa = List("San Diego")
 var sdSportsTeams = scala.collection.mutable.Set("Padres", "Chargers", "Gulls")
 sdSportsTeams.remove("Chargers")
 sdSportsTeams
+sdSportsTeams toSet
